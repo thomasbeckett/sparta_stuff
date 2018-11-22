@@ -1,0 +1,21 @@
+    <h1>Welcome to our Blog</h1>
+
+    <h2><%=@title%></h2>
+    <% @posts.each do |post| %>
+      <div>
+        <h3>
+          <a href="/<%= post.id %>"><%= post.title %></a>
+        </h3>
+        <p>
+          <%= post.body %>
+        </p>
+      </div>
+      <div class="">
+        <a href="/<%= post.id %>/edit">Edit</a>
+        <form class="" action="/<%= post.id %>" method="post">
+          <input type="submit" value="Delete">
+          <input type="hidden" name="_method" value="delete">
+        </form>
+      </div>
+
+    <% end %>

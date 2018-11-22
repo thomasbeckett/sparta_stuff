@@ -1,0 +1,26 @@
+<form class="" action="/<%= @recipe[:id] %>" method="post">
+
+  <div class="name">
+    <label>Name</label>
+    <input class="input" type="text" name="name" value="<%= @recipe[:name] %>" placeholder="Enter name">
+  </div>
+  <br>
+  <div class="description">
+    <label>Description</label>
+    <input class="input" type="text" name="description" value="<%= @recipe[:description] %>" placeholder="Enter description">
+  </div>
+  <br>
+  <div class="method">
+    <label>Method</label>
+    <input class="input" type="text" name="method" value="<%= @recipe[:method] %>" placeholder="Enter method">
+  </div>
+
+  <div >
+    <input class="button" type="submit" name="" value="Save">
+  </div>
+
+  <% if @recipe[:id] != "" %>
+    <input type="hidden" name="_method" value="put">
+  <% end %>
+
+</form>

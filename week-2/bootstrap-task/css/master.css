@@ -1,0 +1,111 @@
+@keyframes phil {
+  from{background: no-repeat url(http://placecage.com/500/500)}
+  to{background: no-repeat url(http://fillmurray.com/500/500);
+  opacity:0;}
+}
+
+body{
+  background: #fafafa;
+}
+
+/* Navbar */
+.navbar{
+  background: #00191C;
+}
+
+h3::before{
+  content: "";
+  display: block;
+  height: 110px;
+  visibility: hidden;
+  margin-top:-100px;
+}
+
+.container:before{
+  content: "";
+  display: block;
+  height: 60px;
+  visibility: hidden;
+  margin-top:-60px;
+}
+/* Jumbotron */
+
+.jumbotron{
+  background: #b5cebc;
+  padding-top: 100px;
+}
+
+/* Main */
+.col{
+  min-width: 288px;
+}
+
+/* Cards  */
+.card-img-top{
+  border-radius: 50%;
+  margin: auto;
+  width: 12rem;
+  margin-top: 5px;
+}
+/* Buttons */
+.button{
+  display: flex;
+  justify-content: center;
+}
+.btn{
+  margin-right:10px;
+}
+
+/* Carousel */
+.carousel{
+  margin: 20px 0;
+}
+
+/* Articles */
+.content{
+  height: 300px;
+  overflow: auto;
+  overflow-x: hidden;
+  margin-bottom: 10px;
+}
+.image-box{
+  display: flex;
+  overflow: hidden;
+}
+.philmur{
+  align-self: center;
+  border-radius: 50%;
+}
+
+/* Animated */
+.anim1{
+  background: no-repeat url(http://placecage.com/500/500);
+  margin:auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 20%;
+}
+.anim1:hover{
+  animation: phil 4s;
+  animation-fill-mode: forwards;
+}
+
+footer{
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .col-4{
+    display: flex;
+    flex-flow: wrap column;
+  }
+  .card{
+    flex-flow: wrap column;
+  }
+}
+@media (min-width: 1000px) {
+  .col{
+    min-width: 200px;
+  }
+}

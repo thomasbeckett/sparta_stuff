@@ -1,0 +1,29 @@
+<%= link_to "Home", root_path %>
+<%= link_to "New", new_post_path() %>
+<br>
+
+<%= notice %>
+<br>
+<h1 class="display-6"><%= @post.title %></h1>
+<br>
+<br>
+<p class="lead"><%= @post.body %></p>
+<cite><%= @post.author %></cite>
+<br>
+
+<%= link_to "Edit", edit_post_path(@post) %>
+<%= link_to "Delete", @post, method: :delete %>
+
+
+
+<hr>
+
+<h3>Comments</h3>
+
+<%= render partial: 'comments/comment', collection: @post.comments, as: :comment %>
+
+<hr>
+
+<h4>Add comment</h4>
+
+<%= render partial: 'comments/form', locals: {comment: @post.comments.new} %>

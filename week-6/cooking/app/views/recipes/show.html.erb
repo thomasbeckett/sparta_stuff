@@ -1,0 +1,10 @@
+<%= link_to "Home", root_path %>
+<%= link_to "New", new_recipe_path() %>
+<br>
+
+<h1><%= @recipe.name %></h1>
+
+<p><%= @recipe.description %></p>
+
+<%= link_to "Edit", edit_recipe_path(@recipe) %>
+<%= link_to "Delete", @recipe, method: :delete %>

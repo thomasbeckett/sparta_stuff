@@ -1,0 +1,194 @@
+[
+  {
+    "uri": "features/expressions.feature",
+    "id": "cucumber-expressions",
+    "keyword": "Feature",
+    "name": "cucumber expressions",
+    "description": "  As a user\n  I want to see how cucumber expressions work\n  So that I can learn things",
+    "line": 1,
+    "elements": [
+      {
+        "id": "cucumber-expressions;i-am-able-to-use-integers",
+        "keyword": "Scenario",
+        "name": "I am able to use integers",
+        "description": "",
+        "line": 6,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I provide an integer of 14",
+            "line": 7,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will be able to test the integer",
+            "line": 8,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 572000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cucumber-expressions;i-am-able-to-use-floats",
+        "keyword": "Scenario",
+        "name": "I am able to use floats",
+        "description": "",
+        "line": 10,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I provide an float of 7.2",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will be able to test the float",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 821000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cucumber-expressions;i-am-able-to-capture-and-use-strings",
+        "keyword": "Scenario",
+        "name": "I am able to capture and use strings",
+        "description": "",
+        "line": 14,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I provide a specific word bird",
+            "line": 15,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I can test the word",
+            "line": 16,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cucumber-expressions;i-am-able-to-count-my-pencils-and-pens",
+        "keyword": "Scenario",
+        "name": "I am able to count my pencils and pens",
+        "description": "",
+        "line": 18,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I have 150 pencils",
+            "line": 19,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19000
+            }
+          },
+          {
+            "keyword": "Given ",
+            "name": "I have 1 pen",
+            "line": 20,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will be able to test how many pens and pencils I have",
+            "line": 21,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            }
+          }
+        ]
+      },
+      {
+        "id": "cucumber-expressions;i-am-able-to-capture-words-and-numbers-using-regular-expressions",
+        "keyword": "Scenario",
+        "name": "I am able to capture words and numbers using regular expressions",
+        "description": "",
+        "line": 23,
+        "type": "scenario",
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I provide something specific like tom123@tom.co.uk I can capture it using a regex",
+            "line": 24,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20000
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I will be able to test the captured word",
+            "line": 25,
+            "match": {
+              "location": "features/step_definitions/expressions_step_def.rb:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

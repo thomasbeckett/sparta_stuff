@@ -1,0 +1,50 @@
+body{
+  margin: 0;
+}
+
+.left{
+  background-color: black;
+  height: 33vh;
+  width: 100%;
+}
+
+.center{
+  background-color: red;
+  height: 34vh;
+  width: 100%;
+}
+
+.right{
+  background-color: yellow;
+  height: 33vh;
+  width: 100vw;
+}
+
+/* Applies if the device has screen width less that 550px */
+@media screen and (min-width: 1000px) {
+  .left{
+    width: 33%;
+    height: 100vh;
+    float: left;
+  }
+
+  .center{
+    background-color: yellow;
+    width: 34%;
+    height: 100vh;
+    float: left;
+  }
+
+  .right{
+    background-color: red;
+    width: 33%;
+    height: 100vh;
+    float: left;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .center{
+    display:none;
+  }
+}

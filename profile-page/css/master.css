@@ -1,0 +1,93 @@
+body{
+  background: #fafafa;
+  padding-top: 56px;
+}
+
+h3{
+  margin-top: 20px;
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+.container{
+  background: white;
+}
+
+/* Navbar */
+.nav{
+  background-color: #F2D8D3;
+}
+
+/* Main Content */
+
+/* Header */
+header{
+  background: linear-gradient(rgba(255,255,255,0.95), rgba(255,255,255, 0.8)), url("../images/track.jpg");
+  background-size: cover;
+}
+.headshot{
+  background: red;
+  border-radius:50%;
+  height:200px;
+  margin: 10px auto;
+  width:200px;
+
+}
+
+.headercontent{
+  height: 50vh;
+}
+
+.arrow{
+  margin-top: 25vh;
+}
+
+.arrow a:hover{
+  opacity:0.5;
+}
+
+
+/* Main */
+/* Work */
+.work, .education{
+  margin-top:100px;
+}
+
+.job::before{
+    content: "";
+    display: block;
+    height: 100px;
+    margin-top:-100px;
+    visibility: hidden;
+}
+
+.sparta{
+  width: 300px;
+}
+
+
+/* Footer */
+footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 600px;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+.contact-name, .contact-message{
+  width: 80%;
+  margin: 10px auto;
+  resize: none;
+}
+
+.contact-message{
+  height: 200px;
+}

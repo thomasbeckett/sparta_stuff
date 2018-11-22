@@ -1,0 +1,14 @@
+<%= link_to "New", new_recipe_path() %>
+
+<h1>Welcome to my Cookbook</h1>
+
+<% @recipes.each do |recipe| %>
+  <%= link_to "#{recipe.name}", recipe %>
+  <br>
+  <p><%= recipe.description  %></p>
+  <br>
+  <%= link_to "Edit", edit_recipe_path(recipe) %>
+  <%= link_to "Delete", recipe, method: :delete %>
+  <hr>
+  <br>
+<% end %>

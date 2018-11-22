@@ -1,0 +1,15 @@
+<h1><%= @recipe[:name] %></h1>
+
+<h4><%= @recipe[:description] %></h4>
+
+
+
+<p><%= @recipe[:method] %></p>
+
+<a href="/<%= @recipe[:id] %>/edit"><button class="button" type="button" name="button">Edit</button></a>
+
+
+<form action="/<%= @recipe[:id] %>" method="post">
+  <input class="button" type="submit" value="Delete">
+  <input type="hidden" name="_method" value="delete">
+</form>

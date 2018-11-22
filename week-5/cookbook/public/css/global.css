@@ -1,0 +1,70 @@
+body {
+  background: olivedrab;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-shadow: 1px 1px 20px indigo;
+}
+
+h1 {
+  text-align: center;
+  color: cadetblue;
+  text-shadow: 2px 2px mistyrose;
+}
+
+h3 {
+  margin-top: 10px;
+  color: bisque;
+  text-shadow: 1px 1px tomato;
+}
+
+h4 {
+  color: springgreen
+}
+
+p {
+  color: deeppink;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: thistle;
+}
+
+.container {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+
+  background: lightgoldenrodyellow;
+  box-shadow: 10px 10px 100px darksalmon;
+  /* display: flex;
+  overflow: hidden; */
+}
+
+.recipe-image {
+  width:100%;
+  background: red;
+  height: 100px;
+}
+
+.recipe div{
+  text-align: center;
+}
+
+.button {
+  width: 100px;
+  border-radius: 5%;
+  background: greenyellow;
+}
+
+.input {
+  background: antiquewhite;
+}
+
+label {
+  color: honeydew;
+}

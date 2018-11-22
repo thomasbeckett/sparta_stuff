@@ -1,0 +1,8 @@
+<p><%= comment.body %></p>
+<cite>By: <%= comment.author %></cite>
+<br>
+<%= link_to "Edit", edit_post_comment_path(@post,comment) %>
+<%= link_to "Delete", [@post,comment], method: :delete%>
+<br>
+<br>
+<br>

@@ -1,0 +1,88 @@
+body{
+  background-color: #fafafa;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.flex-container-horizontal{
+  display: flex;
+  height: 70vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-container-vertical{
+  background: orange;
+  display:flex;
+  flex-direction: column;
+  margin: 20px;
+  width: 350px;
+}
+
+.phone-image{
+  background-color: purple;
+  color: white;
+  height: 100%;
+}
+
+.box{
+  background-color: white;
+  border: solid #999 1px;
+  width: 270px;
+  margin: auto;
+}
+
+.logo{
+  flex: 20;
+}
+.fblogin{
+  flex: 10;
+}
+.form{
+  flex: 35;
+}
+.next{
+  flex: 25;
+}
+.acc{
+  flex: 10;
+}
+
+.nav-flex{
+  background: yellow;
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  width: 100vw;
+  flex-wrap: wrap;
+  text-align: center;
+}
+a{
+  flex: 10;
+  margin: 10px;
+}
+
+@media screen and (max-width: 875px) {
+  .left{
+    display: none;
+  }
+  .links{
+    display:flex;
+    flex-wrap:wrap;
+    max-width: 350px;
+    margin: auto;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .box{
+    width: 100%;
+  }
+  .flex-container-vertical{
+    margin: 0;
+    width: 100vw;
+  }
+
+}

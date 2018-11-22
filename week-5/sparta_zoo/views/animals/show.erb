@@ -1,0 +1,10 @@
+<h1><%= @animal.name %></h1>
+
+<p>Fact: <%= @animal.fact %></p>
+
+<a href="/<%= @animal.id %>/edit">Edit</a>
+
+<form class="" action="/<%= @animal.id %>" method="post">
+  <input type="submit" name="" value="Kill">
+  <input type="hidden" name="_method" value="delete">
+</form>

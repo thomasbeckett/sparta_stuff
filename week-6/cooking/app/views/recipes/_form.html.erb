@@ -1,0 +1,15 @@
+<%= form_for recipe do |r| %>
+  <div class="field">
+    <%= r.label :name %>
+    <%= r.text_field :name %>
+  </div>
+  <br>
+  <div class="field">
+    <%= r.label :description %>
+    <%= r.text_area :description %>
+  </div>
+  <br>
+  <div>
+    <%= r.submit %>
+  </div>
+<% end %>

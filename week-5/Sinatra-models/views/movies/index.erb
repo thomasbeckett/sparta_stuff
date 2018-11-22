@@ -1,0 +1,15 @@
+<h1>Index Page</h1>
+<!-- Note that we have to change how we access our data in our erb files with dot notation instead of movie[:key] -->
+
+<% @movies.each do |movie| %>
+
+  <h1>ID: <%= movie.id %><h1/>
+  <h1><%= movie.title %><h1/>
+  <h3><%= movie.year %><h3/>
+
+  <a href="/movies/<%= movie.id %>">Go to Show page</a>
+  <!-- Our actors is a string - all we're doing here is splitting the string at the ',' which returns an array which we can then loop through -->
+  <% movie.actors.split(',').each do |actor| %>
+    <h5><%= actor %></h5>
+  <% end %>
+<% end %>

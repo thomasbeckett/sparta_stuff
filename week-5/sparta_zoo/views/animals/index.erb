@@ -1,0 +1,9 @@
+<h1>Welcome to Sparta Zoo</h1>
+
+<h2><%= @show_message %></h2>
+
+<% @animals.each do |animal| %>
+  <h2>
+    <a href="<%= animal.id %>"><%= animal.name %></a>
+  </h2>
+<% end %>

@@ -1,0 +1,31 @@
+body{
+  background-color: grey;
+}
+
+.content{
+  background-color: orange;
+  height: 100px;
+  margin: 3%;
+  padding: 0 200px;
+}
+
+.flex-container{
+  background: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.box1{
+  flex: 10%;
+}
+
+.box2, .box3, .box4{
+  flex: 4;
+}
+
+.flex-container2{
+  background-color: pink;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  
+}
